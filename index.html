@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ShotoShop — premium gear for everyday motion." />
+    <title>ShotoShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="ShotoShop brand">
+          <span class="brand-mark">S</span>
+          <span>ShotoShop</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#new">New</a>
+          <a href="#men">Men</a>
+          <a href="#women">Women</a>
+          <a href="#accessories">Accessories</a>
+          <a href="#journal">Journal</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">⌕</button>
+          <button class="icon-btn" aria-label="Cart">
+            Cart
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Move with confidence</p>
+          <h1>Built for motion. Styled for everyday life.</h1>
+          <p class="subtitle">
+            Discover premium essentials for training, travel, and everything in between.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#shop">Shop collection</a>
+            <a class="button secondary" href="#story">Our story</a>
+          </div>
+          <ul class="stats" aria-label="Brand stats">
+            <li><strong>25k+</strong><span>happy customers</span></li>
+            <li><strong>4.9/5</strong><span>average rating</span></li>
+            <li><strong>48h</strong><span>dispatch time</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Featured product display">
+          <div class="product-showcase">
+            <div class="product-card featured">
+              <div class="badge">Best seller</div>
+              <div class="product-image product-image-one"></div>
+              <div class="product-meta">
+                <div>
+                  <p class="label">Aero Run</p>
+                  <h2>Velocity Runner</h2>
+                </div>
+                <span class="price">$148</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-band">
+        <div class="container promo-grid">
+          <div><span>Free shipping</span> on orders over $120</div>
+          <div><span>Easy returns</span> within 30 days</div>
+          <div><span>Secure checkout</span> with encrypted payment</div>
+        </div>
+      </section>
+
+      <section id="shop" class="container section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Curated picks</p>
+            <h2>Featured essentials</h2>
+          </div>
+          <div class="filters" aria-label="Product filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="women">Women</button>
+            <button class="filter" data-filter="men">Men</button>
+            <button class="filter" data-filter="accessories">Accessories</button>
+          </div>
+        </div>
+
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="story" class="story container section">
+        <div class="story-copy">
+          <p class="eyebrow">Why ShotoShop</p>
+          <h2>Thoughtful design for real routines.</h2>
+          <p>
+            We design everyday products with premium comfort, durable materials, and a minimalist style that moves with you through work, training, and travel.
+          </p>
+          <a class="button primary" href="#new">Explore more</a>
+        </div>
+        <div class="story-panel">
+          <div class="mini-card">
+            <span class="mini-label">Signature fabric</span>
+            <strong>Adaptive knit</strong>
+            <p>Breathable and flexible for all-day comfort.</p>
+          </div>
+          <div class="mini-card accent">
+            <span class="mini-label">Member perk</span>
+            <strong>10% off first order</strong>
+            <p>Join the community and save on new arrivals.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" aria-label="Shopping cart summary">
+      <div class="cart-head">
+        <h3>Your bag</h3>
+        <button class="icon-btn small" aria-label="Close cart">×</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <p class="empty-state">Your cart is empty.</p>
+      </div>
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+        <button class="button primary full" type="button">Checkout</button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand mini-brand">
+            <span class="brand-mark">S</span>
+            <span>ShotoShop</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Support</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
